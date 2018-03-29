@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+
+<form class="form" action="#">
+    <fieldset>
+    <label>Plan Type <span class="required">*</span>
+        <select name="plan-type" class="select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </label>
+
+    <label>Payment Method <span class="required">*</span>
+        <select name="payment-method" class="select">
+            <option value="bank-card">Bank card</option>
+            <option value="wire-transfer">Wire Transfer</option>
+        </select>
+    </label>
+
+    <label>Payment Therm <span class="required">*</span>
+        <select name="payment-therm" class="select">
+            <option value="annually">Annually</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="monthly">Monthly</option>
+        </select>
+    </label>
+    </fieldset>
+
+    <fieldset>
+    <label>Company Name
+        <input type="text" name="company" class="field-long" placeholder="google">
+    </label>
+
+    <label for="name">Full Name <span class="required">*</span><br></label>
+    <input type="text" name="first-name" class="field-divided" placeholder="First" id="name">
+    <input type="text" name="last-name" class="field-divided" placeholder="Last">
+
+    <label>Email <span class="required">*</span>
+    <input type="email" name="email" class="field-long" placeholder="blabla@gmail.com">
+    </label>
+
+    <label>Phone Number <span class="required">*</span>
+        <input type="tel" name="phone" class="field-long" placeholder="380990027622">
+    </label>
+
+    <label>Password <span class="required">*</span>
+        <input type="password"
+               name="password"
+               class="field-long"
+               placeholder="1kL?h5"
+               pattern="/(?=.*[0-9])(?=.*[.,:;?!*+%-<>@[\]{}/\_{}$#])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z.,:;?!*+%-<>@[\]{}/\_{}$#]{6,8}/g">
+    </label>
+    </fieldset>
+
+    <fieldset>
+        <label>Country <span class="required">*</span>
+            <input type="text" name="country" class="field-long" placeholder="Ukraine">
+        </label>
+
+        <label>ZIP Code <span class="required">*</span>
+            <input type="text" name="zip" class="field-long" placeholder="61000">
+        </label>
+
+        <label>City, State <span class="required">*</span>
+            <input type="text" name="city" class="field-long" placeholder="Kharkov">
+        </label>
+
+        <label>Address <span class="required">*</span>
+            <input type="text" name="address" class="field-long" placeholder="Sumskaya st. 34">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <label>Card Number
+            <input type="text" name="curd-number" class="field-long" placeholder="1234-5678-1234-5678">
+        </label>
+        <label>Expire Date
+            <input type="text" name="card-date" class="field-long" placeholder="12/2020">
+        </label>
+        <label>Secure Code
+            <input type="text" name="card-code" class="field-long" placeholder="321">
+        </label>
+        <label>Holder Name
+            <input type="text" name="holder-name" class="field-long" placeholder="Ivan Ivanov">
+        </label>
+    </fieldset>
+
+    <div class="summery">
+        <h3>Summary</h3>
+        <p>Plan Type</p>
+        <p>Payment Method</p>
+        <p>Payment Therm</p>
+        <p>Total</p>
+    </div>
+
+    <input type="submit" value="Submit" />
+    <a href="#">Therms and condition</a>
+</form>
+
+</body>
+</html>
